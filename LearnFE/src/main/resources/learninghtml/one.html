@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>The first html</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- In line CSS: -->
+    <!-- border: Khung viền,
+         padding: Khoảng cách của chữ và khung,
+         margin: Khoảng cách của khung và viền màn hình máy tính.
+
+         Background:
+         background-image: url('background.webp');
+         background-repeat: no-repeat; //Không lặp lại ảnh
+         background-attachement: fixed;
+         background-size: 100% 100%;
+
+         table,th,td:
+         border: Bố cục
+         border-collapse: collapse //Giúp thống nhất chỉ có 1 đường duy nhất
+         border-radius: Bo góc
+         -> Nếu muốn bo góc tròn hết không có viền bình thường xóa hết đi sài mỗi cái này
+         /** th, td {
+         border: 1px solid black;
+         border-radius: 10px;
+         } **/
+         border-style: Bố cục cạnh (nét liền, nét đứt blabla)
+         text-align: Căn chỉnh left,center,right
+         colspan: Số hàng trong cột
+         rowspan: Số cột trong hàng
+         caption: Đầu đề của bảng (kiểu bảng địa lý ấy)
+         border-spacing: Khoảng cách giữa các ô
+    -->
+    <style>
+    body {
+        background-color:powderblue;
+    }
+    h1 {
+        color: brown;
+        font-family: verdana;
+        font-size:150%;
+    }
+    table, th, td {
+        border: 5px solid black;
+        /*border-collapse: collapse;*/
+        border-radius: 10px;
+        border-style: dotted;
+        border-color: green;
+        border-spacing: 30px;
+    }
+    th,td {
+        background-color: white;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+
+    p {
+        color: purple;
+        font-family: courier;
+        font-size: 130%;
+        border: 3px solid black;
+        padding: 15px;
+        margin: 30px;
+    }
+    a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: blue;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    </style>
+
+    <!-- Internal CSS: <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body >
+
+<h1 id="LH">Learning Headings</h1>
+<h1>This is mine project html</h1>
+<h2>This is mine project html</h2>
+<h3>This is mine project html ...|</h3>
+<h6>This is mine project html !</h6>
+
+<h1>Learning Paragraphs</h1>
+<p>Dao Le Long Vu 2005 @gmail. com</p>
+<p>Dao Le Viet Hoang 2000 @gmail. com</p>
+<!-- Break:Xuống dòng-->
+<p>This is a <br> line break <br> line break.</p>
+<!-- style:Phong cách-->
+<p style="color:red;">This is a red paragraph</p>
+<!-- Attibute title: Khi giữ lâu hiện lên gợi ý-->
+<p title="It's tip">Keep !</p>
+<!-- Single or Double Quotes-->
+<p title='Dao "Le Long" Vu'>Keep !</p>
+<p title="Dao 'Le Long' Vu">Keep !</p>
+<!-- Horizontal Rules-->
+<p>Horizontal rules</p>
+<hr>
+<!-- pre: Định dạng văn bản y hệt trong code khi hiển thị ra màn hình-->
+<pre>
+    I'm Dao Le Long Vu,
+    ninety years old,
+    I'm reading html.
+</pre>
+<!-- style: Phong cach-->
+<h1 style="background-color:green;">Background</h1>
+<p style="color:green;">Color</p>
+<p style="font-family:verdana;">Font family</p>
+<p style="font-size:300%;">Font size</p>
+<p style="text-align:center">Center</p>
+
+<!-- Tex format-->
+<p><b>This text is bold</b></p>
+<p><strong>This text is important</strong></p>
+<p><i>This text is italic</i></p>
+<p><em>This text is emphasized</em></p>
+<p><small>This is some smaller text</small></p>
+<p>I'm <mark>Vu</mark></p>
+<p>I will <del>kill</del> you</p>
+<p>I will <ins>kill</ins> you</p>
+<p>H<sub>2</sub>SO<sub>4</sub> + Ba(OH)<sub>2</sub></p>
+<p>x<sup>2</sup> + y<sup>2</sup> = 0</p>
+
+<!-- Quotation and Citation-->
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+<p>Long Vu said: <q>I love you !</q></p>
+<!-- Abbreviations-->
+<p>The <abbr title="Information Technology">IT</abbr></p>
+<!-- Address-->
+<address>
+    03668***** <br>
+    Quang Minh, Hai Ha, Quang Ninh <br>
+    daolelongvu@gmail.com <br>
+</address>
+<!-- City-->
+<p><cite>Mong Cai</cite> by Quang Ninh</p>
+<!-- Bi-Directional Override: Viết ngược lại-->
+<bdo dir="rtl">Bi-Directional Override</bdo>
+
+<!-- Color-->
+<p style="background-color:rgb(255, 99, 71);">.rgb</p>
+<p style="background-color:#ff6347;">#rrggbb</p>
+<p style="background-color:hsl(9, 100%, 64%);">hsl</p>
+<p style="background-color:rgba(255, 99, 71, 0.5);">rgba</p>
+<p style="background-color:hsla(9, 100%, 64%, 0.5);">.hsla</p>
+
+<h1>Learning Links</h1>
+<a href="https://www.w3schools.com/html/html_basic.asp">This is a link <br></a>
+<a href="https://www.facebook.com/dllv56?locale=vi_VN" target="_self">This is a link my facebook (self) <br></a>
+<a href="https://www.facebook.com/dllv56?locale=vi_VN" target="_blank">This is a link my facebook (blank) <br></a>
+<a href="https://www.facebook.com/dllv56?locale=vi_VN" target="_parent">This is a link my facebook (parent) <br></a>
+<a href="https://www.facebook.com/dllv56?locale=vi_VN" target="_top">This is a link my facebook (top) <br></a>
+<h2>Let click the image !</h2>
+<a href="https://www.facebook.com/dllv56?locale=vi_VN">
+    <img src="the_road.jpg" alt="Test" style="width:50px;height:60px">
+    <br>
+</a>
+<button onclick="document.location='https://www.facebook.com/dllv56?locale=vi_VN'">Button</button>
+<!--Bookmark -->
+<a href="#LH"> Jump to HL <br></a>
+<!-- Map -->
+<img src="workplace.jpg" alt="workplace" usemap="#workmap">
+<map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm" target="_blank">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/phone.htm" target="_blank">
+    <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.w3schools.com/html/coffee.htm" target="_blank">
+</map>
+<!--picture: Trình duyệt sẽ tự lựa chọn ảnh phù hợp trong source, loại bỏ các ảnh ở source dưới nó -->
+<picture>
+    <source srcset="background.webp">
+    <source srcset="workplace.jpg">
+    <img src="the_road.jpg" alt="Beatles" style="width:auto;">
+</picture>
+
+<h1>Learning Images</h1>
+<img src="the_road.jpg" alt="The Road" width="200" height="200">
+
+<!-- Table
+     tr: Nội dung mỗi hàng của bảng (Table rows)
+     th: Tiêu đề bảng (Table headers)
+     td: Nội dung bảng (Table data)
+-->
+<table style="width:100%">
+    <caption><b>Horizontal Table</b></caption>
+    <tr>
+        <th style="width:70%">Full Name</th>
+        <th>Date of Birth</th>
+        <th>Contact</th>
+    </tr>
+    <tr style="height:100px">
+        <td>Dao Le Long Vu</td>
+        <td>05/06/2005</td>
+        <td>workindllv@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Dao Le Viet Hoang</td>
+        <td>28/02/2000</td>
+        <td>daoleviethoang@gmail.com</td>
+    </tr>
+</table>
+<table>
+    <caption><b>Vertical Table</b></caption>
+    <tr>
+        <th>Full name</th>
+        <td>Dao Le Long Vu</td>
+        <td>Dao Le Viet Hoang</td>
+    </tr>
+    <tr>
+        <th>Date of Birth</th>
+        <td>05/06/2005</td>
+        <td>28/02/2000</td>
+    </tr>
+    <tr>
+        <th>Contact</th>
+        <td>workindllv@gmail.com</td>
+        <td>daoleviethoang@gmail.com</td>
+    </tr>
+</table>
+<table>
+    <caption><b>3 in 1 Table</b></caption>
+    <tr>
+        <th>Name</th>
+        <th colspan="3" rowspan="2">Mark</th>
+    </tr>
+    <tr>
+        <td>Long Vu</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Viet Hoang</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+</table>
+<h1>Learning CSS <q>Cascading Style Sheets</q></h1>
+</body>
+</html>
